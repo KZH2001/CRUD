@@ -1,1 +1,2 @@
-create database employee_management_system
+USE employee_management_system;
+DESCRIBE employees;
