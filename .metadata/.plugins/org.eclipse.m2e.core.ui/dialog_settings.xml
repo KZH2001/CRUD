@@ -67,6 +67,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="D:\CRUD\CRUD\demo"/>
 			<item value="C:\Users\kyaw.zh\Downloads\demo\demo"/>
 		</list>
 		<list key="projectNameTemplate">
