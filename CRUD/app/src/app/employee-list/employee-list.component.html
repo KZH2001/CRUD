@@ -1,0 +1,25 @@
+<h2>Employee List</h2>
+
+<div class="card shadow">
+    <div class="card-body">
+<table class="table table-striped">
+    <thead class="table-dark">
+        <tr>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let emp of employees">
+            <td>{{ emp.id }}</td>
+            <td>{{ emp.firstName }}</td>
+            <td>{{ emp.lastName }}</td>
+            <td>{{ emp.emailId }}</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+</div>
