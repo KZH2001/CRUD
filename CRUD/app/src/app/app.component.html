@@ -1,3 +1,37 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+    <div class="container">
+        <a class="navbar-brand fw-bold" routerLink="employees">
+            <i class="bi bi-people-fill me-2"></i>EMS Pro
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="employees" routerLinkActive="active">
+                        Employee List
+                    </a>
+                </li>
+                <li class="nav-item ms-lg-3">
+                    <a class="btn btn-outline-light btn-sm mt-1" routerLink="create-employee" routerLinkActive="active">
+                        Add Employee
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-4">
+    <router-outlet></router-outlet>
+</div>
+
+
+
 <div class="container">
-    <app-employee-list></app-employee-list>
+    <router-outlet></router-outlet>
+    <!-- <app-employee-list></app-employee-list> -->
 </div>
