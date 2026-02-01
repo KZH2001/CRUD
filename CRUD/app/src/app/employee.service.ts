@@ -13,7 +13,11 @@ export class EmployeeService {
     
   }
 
-  getEmployeesList(): Observable<Employee[]>{
-    return this.HttpClient.get<Employee[]>(`${this.baseUrl}`);
-  }
+    getEmployeesList(): Observable<Employee[]>{
+      return this.HttpClient.get<Employee[]>(`${this.baseUrl}`);
+    }
+
+    createEmployee(employee: Employee): Observable<Object>{
+      return this.HttpClient.post(`${this.baseUrl}` , employee);
+    }
 }
