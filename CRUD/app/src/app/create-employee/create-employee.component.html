@@ -19,17 +19,17 @@
                     <form (ngSubmit) = "onSubmit()" id="employeeForm">
                         <div class="mb-3">
                             <label for="firstName" class="form-label">First Name</label>
-                            <input name="firstName" [(ngModel)] = "employee.firstName" type="text" class="form-control" id="firstName" placeholder="Enter first name" required>
+                            <input required name="firstName" [(ngModel)] = "employee.firstName" type="text" class="form-control" id="firstName" placeholder="Enter first name" required>
                         </div>
 
                         <div class="mb-3">
                             <label for="lastName" class="form-label">Last Name</label>
-                            <input name="lastName" [(ngModel)]="employee.lastName" type="text" class="form-control" id="lastName" placeholder="Enter last name" required>
+                            <input required name="lastName" [(ngModel)]="employee.lastName" type="text" class="form-control" id="lastName" placeholder="Enter last name" required>
                         </div>
 
                         <div class="mb-3">
                             <label for="email" class="form-label">Email Address</label>
-                            <input name="emailId" [(ngModel)] = "employee.emailId" type="email" class="form-control" id="email" placeholder="example@mail.com" required>
+                            <input required name="emailId" [(ngModel)] = "employee.emailId" type="email" class="form-control" id="email" placeholder="example@mail.com" required>
                         </div>
 
                         <div class="d-grid gap-2">
