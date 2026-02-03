@@ -9,15 +9,19 @@
         <th>First Name</th>
         <th>Last Name</th>
         <th>Email</th>
+        <th>Action</th>
         </tr>
     </thead>
 
-    <tbody>
+    <tbody> 
         <tr *ngFor="let emp of employees">
             <td>{{ emp.id }}</td>
             <td>{{ emp.firstName }}</td>
             <td>{{ emp.lastName }}</td>
             <td>{{ emp.emailId }}</td>
+            <td>
+                <button (click)="updateEmployee(emp.id)" class="btn btn-dark text-white" >Edit</button>
+            </td>
         </tr>
     </tbody>
 </table>
