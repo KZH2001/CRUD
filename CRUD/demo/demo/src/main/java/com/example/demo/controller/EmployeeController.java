@@ -36,7 +36,7 @@ public Employee createEmployee(@RequestBody Employee employee) {
 }
 
 //get employee by id 
-@GetMapping("/employee/{id}")
+@GetMapping("/employees/{id}")
 public ResponseEntity<Employee> getEmployeeById(@PathVariable Long id) {
 	Employee employee = employeeRepository.findById(id)
 			.orElseThrow(() ->  new ResourceNotFoundException("Employee not exist id :" + id));
@@ -44,7 +44,7 @@ public ResponseEntity<Employee> getEmployeeById(@PathVariable Long id) {
 }
 
 //update employee id
-@PutMapping("/employee/{id}")
+@PutMapping("/employees/{id}")
 public ResponseEntity<Employee> updateEmployee(@PathVariable Long id, @RequestBody Employee employeeDetails){
 	Employee employee = employeeRepository.findById(id)
 			.orElseThrow(() ->  new ResourceNotFoundException("Employee not exist id :" + id));
