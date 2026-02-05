@@ -21,10 +21,9 @@
                     <td>{{ emp.emailId }}</td>
                     <td>
                         <button (click)="updateEmployee(emp.id)" class="btn btn-dark text-white">Edit</button>
+                        <button (click)="deleteEmployee(emp.id)" class="btn btn-danger text-white ms-2">Delete</button>
                     </td>
-                    <td>
-                        <button (click)="deleteEmployee(emp.id)" class="btn btn-danger text-danger">Delete</button>
-                    </td>
+                    
                 </tr>
             </tbody>
         </table>
